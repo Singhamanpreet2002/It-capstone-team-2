@@ -10,7 +10,7 @@ DB password: Capstoneproject2!
 
           Pages
           
-1.Home
+1.Landing Page                                                                            
 2.About Us + footer.html                                                   REDNEY
 3.Repair Center -> 4.Confirmation page                                     JOHN                                                    
 5.Pre-Build -> 6.Payment & shipping -> 7.Confirmation page prebuild        APS
