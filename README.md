@@ -1,6 +1,6 @@
 # It-capstone-team-2
 Website test version name RawPC
-URL https://rawpc.000webhostapp.com
+URL https://binarybros1.000webhostapp.com
                    
                    Database info    
 DB host: "localhost"
