@@ -1,18 +1,13 @@
 # It-capstone-team-2
-Website test version name RawPC
-URL https://binarybros1.000webhostapp.com
-                   
-                   Database info    
-DB host: "localhost"
-DB name: id19064060_users
-DB user: id19064060_root
-DB password: Capstoneproject2!
+Website test version name BinaryBros
+
+                
 
           Pages
           
 1.Landing Page                                                                            
 2.About Us + footer.html                                                   REDNEY
-3.Services -> 4.Confirmation page                                          JOHN                                                    
+3.Services -> 4.Confirmation page                                          JOHN & REDNEY                                                   
 5.Pre-Build -> 6.Payment & shipping -> 7.Confirmation page prebuild        APS
 8.BYO-PC -> 9.Payment & shipping -> 10.Confirmation page BYO               EVAN
 11.Login --> PHP MySQL connection                                          NENAD
