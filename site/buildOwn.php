@@ -49,8 +49,264 @@ session_start();
             </div>
         </nav>
     </header>
-    <main>
-<!-- add Content -->
+   <main>
+
+
+    <h1>
+        Build Your Own PC!
+    </h1>
+    <p>
+        Choose what you want in your new PC!</br>
+        Select one <b>Case</b> / <b>CPU</b> / <b>GPU</b> / <b>Storage</b> / <b>RAM</b> opption.
+    </p>
+
+    </br>
+
+
+    <form>
+        <div>
+            <h2>Case</h2>
+            <ul>
+                <li>
+                    <label>
+                        <input type="radio" name="case" value="White" >
+                        <img src="images/Case1.png">
+                        White case
+                        <!--White Facepanle /RGB Fan/Image From Google      \Website:               periphio.com-->
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="case" value="Fan" >
+                        <img src="images/Case2.png">
+                        Alternet case
+                        <!--White/ Fan Facepanle /RGB Fan/Image From Google \Website:               ubuy.hu-->
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="case" value="Black" >
+                        <img src="images/Case3.png">
+                        Black case
+                        <!--Black Facepanle /No RGB Fan/Image From Google   \Website:               newegg.com-->
+                    </label>
+                </li>
+            </ul>
+        </div> <!--Case -->
+        <div>
+            <h2>CPU</h2>
+            <ul id="i5">
+                <h4>Intel i5</h4>
+                <li>
+                    <label>
+                        <input type="radio" name="CPU" value="i5-3450" >
+                        <img id="CPU" CPU src="images/i5-3450.jpg">
+                        i5-3450
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="CPU" value="i5-6400" >
+                        <img id="CPU" src="images/i5-6400.png">
+                        i5-6400
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="CPU" value="i5-8500" >
+                        <img id="CPU" src="images/i5-8500.jpg">
+                        i5-8500
+                    </label>
+                </li>
+            </ul>
+            <ul id="i7">
+                <h4>Intel i7</h4>
+                <li>
+                    <label>
+                        <input type="radio" name="CPU" value="i7-4790" >
+                        <img id="CPU" src="images/i7-4790.jpg">
+                        i7-4790
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="CPU" value="i7-6700" >
+                        <img id="CPU" src="images/i7-6700.jpg">
+                        i7-6700
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="CPU" value="i7-8700" >
+                        <img id="CPU" src="images/i7-8700.jpg">
+                        i7-8700
+                    </label>
+                </li>
+            </ul>
+            <ul id="i9">
+                <h4>Intel i9</h4>
+                <li>
+                    <label>
+                        <input type="radio" name="CPU" value="i9-7940" >
+                        <img id="CPU" src="images/i9-7940.jpg">
+                        i9-7940
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="CPU" value="i9-9820" >
+                        <img id="CPU" src="images/i9-9820.jpg">
+                        i9-9820
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="CPU" value="i9-10850" >
+                        <img id="CPU" src="images/i9-10850.jpg">
+                        i9-10850
+                    </label>
+                </li>
+            </ul>
+        </div> <!--CPU -->
+        <div>
+            <h2>GPU</h2>
+            <ul>
+                <li>
+                    <label>
+                        <input type="radio" name="GPU" value="1660" >
+                        <img src="images/RTX-1660.png">
+                        RTX-1660
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="GPU" value="2080" >
+                        <img src="images/RTX-2080.png">
+                        RTX-2080
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="GPU" value="3080" >
+                        <img src="images/RTX-3080.png">
+                        RTX-3080
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="GPU" value="titan" >
+                        <img src="images/RTX-titan.png">
+                        Titan
+                    </label>
+                </li>
+            </ul>
+        </div> <!--GPU -->
+         <div>
+            <h2>Storage</h2>
+            <ul>
+                <li>
+                    <label>
+                        <input type="radio" name="Storage" value="HDD-1tb" >
+                        <img src="images/HDD-1tb.jpg">
+                        HDD 1TB
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="Storage" value="HDD-2tb" >
+                        <img src="images/HDD-2tb.jpg">
+                        HDD 2TB
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="Storage" value="SSD-1tb" >
+                        <img src="images/SSD-1tb.jpg">
+                        SSD 1TB
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="Storage" value="SSD-2tb" >
+                        <img src="images/SSD-2tb.jpg">
+                        SSD 2TB
+                    </label>
+                </li> 
+            </ul>
+        </div> <!--Storage -->
+        <div>
+            <h2>RAM</h>
+            <!--Ram Amount 1/2/4 -->
+            <h4>How Many:</h4>
+            <ul>
+                <li>
+                    <label>
+                        <input type="radio" name="RAM-A" value="1" id="Amount">
+                        <img src="images/Sticks1.png">
+                        1 stick
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="RAM-A" value="2" id="Amount">
+                        <img src="images/Sticks2.png">
+                        2 sticks
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="RAM-A" value="4" id="Amount">
+                        <img src="images/Sticks4.png">
+                        4 sticks
+                    </label>
+                </li>
+            </ul>
+            <!--RAM TYPE-->
+            <h4>Type</h4>
+            <ul>
+                <li>
+                    <label>
+                        <input type="radio" name="RAM" value="4" >
+                        <img src="images/RAM-4.jpg">
+                        4GB
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="RAM" value="8" >
+                        <img src="images/RAM-8.jpg">
+                        8GB
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="RAM" value="16" >
+                        <img src="images/RAM-16.jpg">
+                        16GB
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="RAM" value="32" >
+                        <img src="images/RAM-32.jpg">
+                        32GB
+                    </label>
+                </li>
+            </ul>
+        </div> <!--RAM -->
+        <div>
+
+        </div><!--Submit and Reset-->
+    </form>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+
+
+
     </main>
     <footer>
         <div class="footer">
