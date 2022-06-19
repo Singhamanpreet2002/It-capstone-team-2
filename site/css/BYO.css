@@ -1,0 +1,32 @@
+ul li {
+	display: inline;
+}
+
+main {
+	text-align: center;
+	line-height: 2;
+}
+
+[type=radio] {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+	[type=radio] + img {
+		cursor: pointer;
+	}
+
+	[type=radio]:checked + img {
+		outline: 2px solid #f00;
+	}
+
+img {
+	margin: 30px;
+}
+
+#CPU {
+	width: 175px;
+	height: 175px;
+}
