@@ -51,7 +51,30 @@ session_start();
         </nav>
     </header>
     <main>
-<!-- add Content -->
+<form action="results.html" methods="GET" enctype="multipart/form-data">
+        <div>
+            <label for="date">Today's date</label>
+            <input type="date" name="date" id="date" required>
+        </div>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="John Doe" size="50" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="email@email.com" size="50" required>
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" placeholder="000-000-0000" size="50" required>
+        </div>
+        <div>
+            <label for="issue ">Issue</label>
+            <textarea id="issue" name="issue" placeholder="What is wrong with your computer?" rows= "10" required></textarea>
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
     </main>
     <footer>
         <div class="footer">
