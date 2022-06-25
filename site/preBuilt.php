@@ -10,6 +10,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pre-Built PCs</title>
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/pre-built.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,7 +51,59 @@ session_start();
         </nav>
     </header>
     <main>
-<!-- add Content -->
+    <section>
+        <div class="container-vert">
+            <h1 class="pre-title">The Foundation PC</h1>
+            <div class="img1">
+                <img class="mainBg" src="./images/pre-built-bg.svg" alt="bg" srcset="">
+            </div>
+            
+        </div>
+    </section>
+    <section >
+        <div class="container-vert">
+            <div class="img2">
+                <img class="bg" src="./images/pre-built-bg2.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="img3">
+                <img src="./images/pre-built-anim2.svg" alt="">
+                <img src="./images/pre-built-anim2-text.svg" alt="" srcset="">
+            </div>
+            
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="pc-container">
+                <div class="container-vert">
+                    <img class="pc" src="./images/pre-built-pc1.svg" alt="" srcset="">
+                    <div class="pc-name">Starter PC</div>
+                    <div class="pc-info">H510 Prebuilt Mid-Tower PC</div>
+                    <div class="price">$999</div>
+                    <a href="a.html?var1=val1&var2=val2" class="sbtn"><input class="input" type="button" value="Shop"></a>
+                </div>
+                <div class="container-vert">
+                    <img class="pc" src="./images/pre-built-pc2.svg" alt="" srcset="">
+                    <div class="pc-name">Streaming PC</div>
+                    <div class="pc-info">H650 Prebuilt Mid-Tower PC</div>
+                    <div class="price">$1599</div>
+                    <a href="a.html?var1=val1&var2=val2" class="sbtn"><input class="input" type="button" value="Shop"></a>
+                </div>
+                <div class="container-vert">
+                    <img class="pc" src="./images/pre-built-pc3.svg" alt="" srcset="">
+                    <div class="pc-name">Starter Pro PC</div>
+                    <div class="pc-info">H550 Prebuilt Mid-Tower PC</div>
+                    <div class="price">$1399</div>
+                    <a href="a.html?var1=val1&var2=val2" class="sbtn"><input class="input" type="button" value="Shop"></a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
     </main>
     <footer>
         <div class="footer">
