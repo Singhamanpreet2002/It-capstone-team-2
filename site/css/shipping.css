@@ -57,3 +57,16 @@ label{
     left: 40px;
 
 }
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+   padding: 5px 20px;
+   background-color: var(--dark-green);
+   color: white;
+   border: none;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+}

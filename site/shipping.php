@@ -118,7 +118,9 @@ session_start();
                 <input type="text" type="address" id="address">
             </div>
         </Form>
-
+        <div class="btn-container">
+        <button type="submit">Place Order</button>
+        </div>
     </main>
     <footer>
         <div class="footer">
