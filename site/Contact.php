@@ -49,7 +49,7 @@ session_start();
             </div>
         </nav>
     </header>
-    <main>
+    <main><img src="images/Cyberpunk1.jpg">
 <div class="container">
         <form method="POST" action="contact_us_confirmation.php" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Contact Us</p>

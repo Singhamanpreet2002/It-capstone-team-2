@@ -49,18 +49,19 @@ session_start();
             </div>
         </nav>
     </header>
-    <main><img src="images/PC.jpg"style = "width:100%;">
- <div class="pizza"> 
-       
-        <a href="preBuilt.php">Pre-Builds</a>
-       <a href="buildOwn.php">Build your Own</a>
-
-        </div>
-<!-- add Content -->
-
+    <main>
+<div style="position:relative">
+        <img src="images/PC.jpg" style = "width:100%;">
+ 
+       <div class = "home">
+        <a href="preBuilt.php">Pre-Build PC</a>
+       <a href="buildOwn.php">Build your Own PC</a>
+</div>
+</div>
+    
     </main>
-    <footer>
-        <div class="foot">
+     <footer>
+        <div class="footer">
             <div class="foot-logo">
                 <img src="images/foot-svg.svg" alt="">
             </div>
@@ -70,12 +71,13 @@ session_start();
                     <a href="https://twitter.com/" target="_blank"><img src="images/twiter.svg"></a>
                     <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg"></a>
                     <a href="https://www.linkedin.com/" target="_blank"><img src="images/Linked_in.svg"></a>
-                </div>
+         
+           </div>
                 <p>2273 Marcus Street, Huntsville. AL</p>
                 <p>256-606-2447</p>
         </div>
         <div class="lic">©Binary Bros Inc. 2022 All Rights Reserved</div>
-            </div>
+          </div>
     </footer>
 </body>
 <script src='Js/main.js'></script>

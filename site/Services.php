@@ -52,7 +52,8 @@ session_start();
             </div>
         </nav>
     </header>
-    <main><div class = "container" style = "height:700px">
+    <main><img src="images/Cyberpunk1.jpg">
+        <div class = "container" style = "height:700px">
 <form action="service_confirmation.php" method="POST" class ="login-email">
     <p class="login-text" style="font-size: 2rem; font-weight: 800;">Service request</p>
         <div class="input-group">
@@ -85,8 +86,25 @@ session_start();
     </div>
     </div>
     </form></div>
-    </main>
-    
+    </main>  <footer>
+        <div class="footer">
+            <div class="foot-logo">
+                <img src="images/foot-svg.svg" alt="">
+            </div>
+            <div class="info">
+                <div class="social-media">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="images/twiter.svg"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg"></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="images/Linked_in.svg"></a>
+         
+           </div>
+                <p>2273 Marcus Street, Huntsville. AL</p>
+                <p>256-606-2447</p>
+        </div>
+        <div class="lic">©Binary Bros Inc. 2022 All Rights Reserved</div>
+          </div>
+    </footer>
 </body>
 <script src='Js/main.js'></script>
 </html>

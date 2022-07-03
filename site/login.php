@@ -75,9 +75,8 @@ if (isset($_POST['submit'])) {
 	</div>
 </main>
 
-
-<footer>
-        <div class="foot">
+ <footer>
+        <div class="footer">
             <div class="foot-logo">
                 <img src="images/foot-svg.svg" alt="">
             </div>

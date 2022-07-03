@@ -50,8 +50,12 @@ session_start();
         </nav>
     </header>
     <main>
-<h1> Thanks for reaching out <?php echo htmlspecialchars($_POST['fname']) ?>. One of our team members will get in touch with you shortly.
+        <div style="position: relative">
+        
+<h1 style="position:absolute;top:350px; left:100px;border: 5px solid white;background-color: white"> Thanks for reaching out <?php echo htmlspecialchars($_POST['fname']) ?>. One of our team members will get in touch with you shortly.
 </h1>
+<img src="images/Cyberpunk1.jpg">
+</div>
     </main>
     
 </html>

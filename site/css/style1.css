@@ -12,7 +12,7 @@
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
@@ -45,6 +45,9 @@
     outline: none;
     transition: .3s;
 }
+.container .login-email .input-group input::placeholder {
+    color:black;
+}
 
 
 .container .login-email .input-group textarea {
@@ -71,7 +74,6 @@
     border: none;
     /*background: #a29bfe;*/
     background:hsla(152, 37%, 56%, 1);
-    
     outline: none;
     border-radius: 30px;
     font-size: 1.2rem;

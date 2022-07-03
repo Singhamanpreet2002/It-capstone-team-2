@@ -10,6 +10,8 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='css/style1.css'>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,9 +52,12 @@ session_start();
             </div>
         </nav>
     </header>
-    <main>
-<h1> We received your message <?php echo htmlspecialchars($_POST['name']) ?>. One of our team members will get in touch with you shortly.
+    <main><div style="position: relative">
+        
+<h1 style="position:absolute;top:350px; left:100px;border: 5px solid white;background-color: white"> We received your message <?php echo htmlspecialchars($_POST['name']) ?>. One of our team members will get in touch with you shortly.
 </h1>
+<img src="images/Cyberpunk1.jpg">
+</div>
     </main>
     
 </html>
