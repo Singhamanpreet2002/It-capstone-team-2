@@ -9,6 +9,8 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
+        <link rel='stylesheet' type='text/css' media='screen' href='css/style1.css'>
+
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,50 +52,41 @@ session_start();
             </div>
         </nav>
     </header>
-    <main>
-<form action="results.html" methods="GET" enctype="multipart/form-data">
-        <div>
-            <label for="date">Today's date</label>
+    <main><div class = "container" style = "height:700px">
+<form action="service_confirmation.php" method="POST" class ="login-email">
+    <p class="login-text" style="font-size: 2rem; font-weight: 800;">Service request</p>
+        <div class="input-group">
+            
             <input type="date" name="date" id="date" required>
         </div>
-        <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="John Doe" size="50" required>
+        <div class="input-group">
+           
+            <input type="text" placeholder="Name" name="fname"  size="30" required>
+        </div>
+        <div class="input-group">
+           
+            <input type="email" name="email" id="email" placeholder="email@email.com" size="30" required>
+        </div>
+        <div class="input-group">
+           
+            <input type="tel" name="phone" id="phone" placeholder="000-000-0000" size="30" required>
+        </div>
+        <div class="input-group" style = "height:100px">
+            <textarea name="issue" placeholder= "Enter you message here..." rows= "10" cols="40"required></textarea>
         </div>
         <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="email@email.com" size="50" required>
+            
         </div>
-        <div>
-            <label for="phone">Phone</label>
-            <input type="tel" name="phone" id="phone" placeholder="000-000-0000" size="50" required>
+            <div class="input-group">
+        <button type="reset" class="btn">Reset</button>
         </div>
-        <div>
-            <label for="issue ">Issue</label>
-            <textarea id="issue" name="issue" placeholder="What is wrong with your computer?" rows= "10" required></textarea>
-        </div>
-        <button type="reset">Reset</button>
-        <button type="submit">Submit</button>
-    </form>
+          <div class="input-group">
+        <button type="submit" class="btn">Submit</button>
+    </div>
+    </div>
+    </form></div>
     </main>
-    <footer>
-        <div class="footer">
-            <div class="foot-logo">
-                <img src="images/foot-svg.svg" alt="">
-            </div>
-            <div class="info">
-                <div class="social-media">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg"></a>
-                    <a href="https://twitter.com/" target="_blank"><img src="images/twiter.svg"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg"></a>
-                    <a href="https://www.linkedin.com/" target="_blank"><img src="images/Linked_in.svg"></a>
-                </div>
-                <p>2273 Marcus Street, Huntsville. AL</p>
-                <p>256-606-2447</p>
-        </div>
-        <div class="lic">©Binary Bros Inc. 2022 All Rights Reserved</div>
-          </div>
-    </footer>
+    
 </body>
 <script src='Js/main.js'></script>
 </html>

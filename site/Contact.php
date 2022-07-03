@@ -7,7 +7,9 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+            <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+            <link rel='stylesheet' type='text/css' media='screen' href='css/style1.css'>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,7 +50,24 @@ session_start();
         </nav>
     </header>
     <main>
-<!-- add Content --> <h1>CONTACT INFO</h1>
+<div class="container">
+        <form method="POST" action="contact_us_confirmation.php" class="login-email">
+            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Contact Us</p>
+            <div class="input-group">
+                <input type="text" placeholder="Name" name="name" >
+            </div>
+            <div class="input-group">
+                <input type="email" placeholder="email" name="email" required>
+            </div>
+            <div class="input-group" style = "height:100px">
+                <textarea placeholder= "Please enter your message here..." name="message" rows="5" cols="41" required></textarea>
+            </div>
+            <div class="input-group">
+                <button name="submit" class="btn">Submit</button>
+            </div>
+            
+        </form>
+    </div>
     </main>
     <footer>
         <div class="footer">
