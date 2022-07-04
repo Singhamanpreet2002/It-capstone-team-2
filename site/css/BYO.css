@@ -14,13 +14,13 @@ main {
 	height: 0;
 }
 
-	[type=radio] + img {
-		cursor: pointer;
-	}
+[type=radio] + img {
+	cursor: pointer;
+}
 
-	[type=radio]:checked + img {
-		outline: 2px solid #f00;
-	}
+[type=radio]:checked + img {
+	outline: 2px solid #f00;
+}
 
 img {
 	margin: 30px;
@@ -29,4 +29,28 @@ img {
 #CPU {
 	width: 175px;
 	height: 175px;
+}
+
+.cart {
+	float: right;
+	width: 20%;
+	position: fixed;
+	right: 40px;
+}
+
+.information {
+	float: left;
+	width: 77%;
+}
+
+.dollor {
+	float: right;
+}
+
+.cart.price {
+	float: right;
+}
+
+.type {
+	float: left;
 }
