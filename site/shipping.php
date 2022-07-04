@@ -54,73 +54,125 @@ session_start();
         </nav>
     </header>
     <main>
-        <Form>
+        <Fieldset>
             <legend>Summary</legend>
-                <div class="container-vert">
-                    <div class="summary">
-                        <label for="prod">Starter PC </label>
-                        <label for="price">$1599</label>
-                    </div>
-                    <div class="summary">
-                        <label for="prod">Starter pro PC </label>
-                        <label for="price">$1799</label>
-                    </div>
-                    <div class="summary">
-                        <label for="Total">Total </label>
-                        <label for="price">$3398</label>
-                    </div>
-                </div>
-        </Form>
-        <Form>
+            <div class="container-vert">
+                <?php
+                    if(isset($_POST['buildOwn'])){
+                        list($CPUd,$CPUp) = explode('|', $_POST['CPU']);
+
+                        list($Cased,$Casep) = explode('|', $_POST['Case']);
+
+                        list($GPUd,$GPUp) = explode('|', $_POST['GPU']);
+
+                        list($Storaged,$Storagep) = explode('|', $_POST['Storage']);
+
+                        $AmountN=$_POST['RAM-A'];
+                        list($RAMd,$RAMp) = explode('|', $_POST['RAM']);
+        
+
+                        echo '<div class="summary">';
+                            echo '<label for="prod">'.$Cased.' case </label>';
+                            echo '<label for="price">$'. $Casep .'</label>';
+                        echo '</div>';
+                        echo '<div class="summary">';
+                            echo '<label for="prod">'.$CPUd.' CPU </label>';
+                            echo '<label for="price">$'. $CPUp .'</label>';
+                        echo '</div>';
+                        echo '<div class="summary">';
+                            echo '<label for="prod">'.$GPUd.' GPU</label>';
+                            echo '<label for="price">$'. $GPUp .'</label>';
+                        echo '</div>';
+                        echo '<div class="summary">';
+                            echo '<label for="prod">'.$Storaged.' Storage</label>';
+                            echo '<label for="price">$'. $Storagep .'</label>';
+                        echo '</div>';
+                        echo '<div class="summary">';
+                            echo '<label for="prod">'. $AmountN . ' x ' . $RAMd . 'GB</label>';
+                            echo '<label for="price">$'. $RAMp * $AmountN .'</label>';
+                        echo '</div>';
+                        echo '<div class="summary">';
+                            echo '<label for="prod">Total</label>';
+                            $TotalBYO = round(($RAMp * $AmountN + $Storagep + $GPUp + $CPUp + $Casep) * 1.075 , 2);
+                            echo '<label for="price">$'. $TotalBYO .'</label>';
+                        echo '</div>';
+                    }elseif (isset($_GET['prebuild'])){
+                        list($Fulld,$Fullp) = explode('|', $_GET['Full']);
+                        echo '<div class="summary">';
+                            echo '<label for="prod"> Beginner '. $Fulld . ' PC</label>';
+                            echo '<label for="price">$'. $Fullp .'</label>';
+                        echo '</div>';
+                        echo '<div class="summary">';
+                            echo '<label for="prod">Total</label>';
+                            $TotalPre = round(($Fullp) * 1.075 , 2);
+                            echo '<label for="price">$'. $TotalPre .'</label>';
+                        echo '</div>';
+                    }
+                ?>
+             </div>
+        </Fieldset>
+
+        <Form method="POST" action="Confirmation.php">
+        <Fieldset>
             <legend>Shipping</legend>
             <div class="container">
                 <label for="fname">First Name</label>
-                <input type="text" type="fname" id="fnam">
+                <input type="text" name="fname" id="fnam" required>
             </div>
             <div class="container">
                 <label for="lname">Last Name</label>
-                <input type="text" type="lname" id="lname">
+                <input type="text" name="lname" id="lname" required>
             </div>
             <div class="container">
                 <label for="email">Email Address</label>
-                <input type="email" type="email" id="email">
+                <input type="email" name="email" id="email">
             </div>
             <div class="container">
                 <label for="zipcode">zip code</label>
-                <input type="text" type="zipcode" id="zipcode">
+                <input type="text" name="zipcode" id="zipcode" required>
             </div>
             <div class="container">
                 <label for="address">Address</label>
-                <input type="text" type="address" id="address">
-            </div>
-            
-        </Form>
-        <Form>
+                <input type="text" name="address" id="address" required>
+            </div> 
+        </Fieldset>
+        <Fieldset>
             <legend>Payment Info</legend>
             <div class="container">
                 <label for="CName">Card Holder Name</label>
-                <input type="text" type="CName" id="CName">
+                <input type="text" name="CName" id="CName" required>
             </div>
             <div class="container">
                 <label for="CNum">Credit Card Number</label>
-                <input type="number" type="CNum" id="CNum">
+                <input type="number" name="CNum" id="CNum" maxlength="16" required>
             </div>
             <div class="container">
                 <label for="date">exp date</label>
-                <input type="date" type="date" id="date">
+                <input type="month" name="date" id="date" required>
             </div>
             <div class="container">
                 <label for="cvv">CVV</label>
-                <input type="number" type="cvv" id="cvv">
+                <input type="number" name="cvv" id="cvv" maxlength="3" required>
             </div>
-            <div class="container">
-                <label for="address">Billing Address</label>
-                <input type="text" type="address" id="address">
+            <input type="hidden" name="TotalBYO" <?php echo 'value="' . $TotalBYO . '"' ?>>
+            <input type="hidden" name="TotalPre" <?php echo 'value="' . $TotalPre . '"' ?>>
+            <input type="hidden" name="CPUd" <?php echo 'value="' . $CPUd . '"' ?>>
+            <input type="hidden" name="Cased" <?php echo 'value="' . $Cased . '"' ?>>
+            <input type="hidden" name="GPUd" <?php echo 'value="' . $GPUd . '"' ?>>
+            <input type="hidden" name="RAMd" <?php echo 'value="' . $RAMd . '"' ?>>
+            <input type="hidden" name="AmountN" <?php echo 'value="' . $AmountN . '"' ?>>
+            <input type="hidden" name="Storaged" <?php echo 'value="' . $Storaged . '"' ?>>
+            <input type="hidden" name="Fulld" <?php echo 'value="' . $Fulld . '"' ?>>
+            <input type="hidden" name="isBYO" <?php echo 'value="' . isset($_POST['buildOwn']) . '"' ?>>
+            <input type="hidden" name="isPre" <?php echo 'value="' . isset($_GET['prebuild']) . '"' ?>>
+            
+            
+        </Fieldset>
+            <div class="btn-container">
+            <button type="submit">Place Order</button>
             </div>
         </Form>
-        <div class="btn-container">
-        <button type="submit">Place Order</button>
-        </div>
+        
     </main>
     <footer>
         <div class="footer">
