@@ -52,7 +52,7 @@ session_start();
             </div>
         </nav>
     </header>
-    <main><img src="images/Cyberpunk1.jpg">
+    <main><div class="xy"><img src="images/Cyber.jpg"></div>
         <div class = "container" style = "height:700px">
 <form action="service_confirmation.php" method="POST" class ="login-email">
     <p class="login-text" style="font-size: 2rem; font-weight: 800;">Service request</p>
