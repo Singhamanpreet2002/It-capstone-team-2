@@ -60,15 +60,15 @@ session_start();
             
                 echo "This is a BYO <br>";
                 echo "You ordered: <br>";
-                echo 'CPU:' . $_POST['CPUd'] . '<br>';
-                echo 'Case:' . $_POST['Cased'] . '<br>';
-                echo 'GPU:' . $_POST['GPUd'] . '<br>';
-                echo 'RAM:' . $_POST['AmountN'] . 'Sticks of'. $_POST['RAMd'] . '<br>';
-                echo 'Storage' . $_POST['Storaged'] . '<br>';
+                echo 'CPU: ' . $_POST['CPUd'] . '<br>';
+                echo 'Case: ' . $_POST['Cased'] . '<br>';
+                echo 'GPU: ' . $_POST['GPUd'] . '<br>';
+                echo 'RAM: ' . $_POST['AmountN'] . ' Sticks of '. $_POST['RAMd'] . '<br>';
+                echo 'Storage: ' . $_POST['Storaged'] . '<br>';
                 echo 'Totaling: $' . $_POST['TotalBYO'] . '<br>';
-                echo 'Charged to this card:' . $_POST['CNum'] . '<br>';
-                echo 'And being shipped to:' . $_POST['address'] . '<br>';
-                echo 'An email was sent to:' . $_POST['email'] . 'with  your receipt!<br>';
+                echo 'Charged to this card: ' . $_POST['CNum'] . '<br>';
+                echo 'And being shipped to: ' . $_POST['address'] . '<br>';
+                echo 'An email was sent to: ' . $_POST['email'] . ' with  your receipt!<br>';
 
             
             
@@ -77,11 +77,11 @@ session_start();
             
                 echo "This is prebuild";
                 echo "You ordered: <br>";                
-                echo 'Begginer' . $_POST['Fulld'] . 'PC<br>';
+                echo 'Begginer' . $_POST['Fulld'] . ' PC<br>';
                 echo 'Totaling: $' . $_POST['TotalPre'] . '<br>';
-                echo 'Charged to this card:' . $_POST['CNum'] . '<br>';
-                echo 'And being shipped to:' . $_POST['address'] . '<br>';
-                echo 'An email was sent to:' . $_POST['email'] . 'with  your receipt!<br>';
+                echo 'Charged to this card: ' . $_POST['CNum'] . '<br>';
+                echo 'And being shipped to: ' . $_POST['address'] . '<br>';
+                echo 'An email was sent to: ' . $_POST['email'] . ' with  your receipt!<br>';
            
 
             }
