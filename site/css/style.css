@@ -234,5 +234,19 @@ footer{
     box-shadow: 0 0 20px rgba(8,7,16,0.6);
      }
     main .xy img{
-        width: 100%
+        width: 100%;
     }
+    .homeServices {
+    position: absolute;
+    top:900px;
+    left:350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-weight: 400;
+    margin-top: .5%;
+    width: 60%;
+    color: white;
+    /* position: absolute; */ 
+}

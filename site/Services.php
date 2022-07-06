@@ -52,7 +52,7 @@ session_start();
             </div>
         </nav>
     </header>
-    <main><div class="xy"><img src="images/Cyber.jpg"></div>
+    <main><div class="xy"><img src="images/Cyber.jpg" style="position: relative"></div>
         <div class = "container" style = "height:700px">
 <form action="service_confirmation.php" method="POST" class ="login-email">
     <p class="login-text" style="font-size: 2rem; font-weight: 800;">Service request</p>
@@ -86,6 +86,20 @@ session_start();
     </div>
     </div>
     </form></div>
+    <div class="homeServices"><h1>What Our Clients Have to Say<br><br>"Binary Bros is the best! I love knowing my electronics are protected and there is no deductible for replacement or repair if I do have a problem."<br>— Cindee G., WA<br><br>"The BB service team is one of the primary reasons why I purchase tech products from Binary Bros. Any time I've ever had to use my Bros Protection Plans, I've had nothing but positive experiences."<br><br>
+
+— Scott R., TX
+
+
+
+    </h1>
+        
+
+
+
+
+    </div>
+
     </main>  <footer>
         <div class="footer">
             <div class="foot-logo">

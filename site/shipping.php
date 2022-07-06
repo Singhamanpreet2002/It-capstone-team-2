@@ -103,6 +103,12 @@ session_start();
                             echo '<label for="price">$'. $Fullp .'</label>';
                         echo '</div>';
                         echo '<div class="summary">';
+                            echo '<label for="prod">Tax (7.5%)</label>';
+                            $Tax = round($Fullp * 0.075 , 2);
+                            echo '<label for="price">$'. $Tax .'</label>';
+                            echo '</div>';
+
+                        echo '<div class="summary">';
                             echo '<label for="prod">Total</label>';
                             $TotalPre = round(($Fullp) * 1.075 , 2);
                             echo '<label for="price">$'. $TotalPre .'</label>';
@@ -154,7 +160,7 @@ session_start();
                 <label for="cvv">CVV</label>
                 <input type="number" name="cvv" id="cvv" maxlength="3" required>
             </div>
-            <input type="hidden" name="TotalBYO" <?php echo 'value="' . $TotalBYO . '"' ?>>
+            <!--<input type="hidden" name="TotalBYO" <?php echo 'value="' . $TotalBYO . '"' ?>>
             <input type="hidden" name="TotalPre" <?php echo 'value="' . $TotalPre . '"' ?>>
             <input type="hidden" name="CPUd" <?php echo 'value="' . $CPUd . '"' ?>>
             <input type="hidden" name="Cased" <?php echo 'value="' . $Cased . '"' ?>>
@@ -164,7 +170,7 @@ session_start();
             <input type="hidden" name="Storaged" <?php echo 'value="' . $Storaged . '"' ?>>
             <input type="hidden" name="Fulld" <?php echo 'value="' . $Fulld . '"' ?>>
             <input type="hidden" name="isBYO" <?php echo 'value="' . isset($_POST['buildOwn']) . '"' ?>>
-            <input type="hidden" name="isPre" <?php echo 'value="' . isset($_GET['prebuild']) . '"' ?>>
+            <input type="hidden" name="isPre" <?php echo 'value="' . isset($_GET['prebuild']) . '"' ?>>  -->
             
             
         </Fieldset>
