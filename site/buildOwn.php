@@ -10,11 +10,14 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build your own PC</title>
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/BYO.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <script src='Js/main.js' async></script>
+    <script src='Js/BYO.js' async></script>
 </head>
 <body>
     <header>
@@ -32,15 +35,15 @@ session_start();
                 </li>
                 <li><a href="Services.php">Services</a></li>
                 <?php 
-   if (isset($_SESSION['username'])) {
-   echo '<li><a href="logout.php">Logout</a></li>';
-   echo "<div style = 'letter-spacing:3px;font-size: 20px;position: absolute;right: 30px; ' > Own it " . $_SESSION['username'] . " !</div>" ;
-}
-  else {
-          echo  '<div class="login">';
-          echo  ' <li><a href="login.php"><img src="images/Login.svg" alt="">Login/Register</a></li></div>';
-  }
-  ?>   
+                    if (isset($_SESSION['username'])) {
+                        echo '<li><a href="logout.php">Logout</a></li>';
+                        echo "<div style = 'letter-spacing:3px;font-size: 20px;position: absolute;right: 30px; ' > Own it " . $_SESSION['username'] . " !</div>" ;
+                        }
+                    else {
+                        echo  '<div class="login">';
+                        echo  ' <li><a href="login.php"><img src="images/Login.svg" alt="">Login/Register</a></li></div>';
+                        }
+                 ?>   
             </ul>
             <div class="burger">
                 <div class="line1 line"></div>
@@ -49,10 +52,11 @@ session_start();
             </div>
         </nav>
     </header>
-   <main>
+    <main>
+    <!-- This is radeo-->
 
 
-    <h1>
+        <h1>
             Build Your Own PC!
         </h1>
         <p>
@@ -238,37 +242,37 @@ session_start();
                     <ul>
                         <li>
                             <label>
-                                <input type="radio" name="GPU" value="1660|1" required>
+                                <input type="radio" name="GPU" value="1660|79.99" required>
                                 <img src="images/RTX-1660.png">
                                 <span class="detail">RTX-1660</span>&emsp;
-                                $<span class="price">1 </span>
+                                $<span class="price">79.99</span>
 
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="GPU" value="2080|2" required>
+                                <input type="radio" name="GPU" value="2080|109.99" required>
                                 <img src="images/RTX-2080.png">
                                 <span class="detail">RTX-2080</span>&emsp;
-                                $<span class="price">2 </span>
+                                $<span class="price">109.99</span>
 
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="GPU" value="3080|3" required>
+                                <input type="radio" name="GPU" value="3080|199.99" required>
                                 <img src="images/RTX-3080.png">
                                 <span class="detail">RTX-3080</span>&emsp;
-                                $<span class="price">3 </span>
+                                $<span class="price">199.99</span>
 
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="GPU" value="titan|4" required>
+                                <input type="radio" name="GPU" value="titan|399.99" required>
                                 <img src="images/RTX-titan.png">
                                 <span class="detail">Titan</span>&emsp;
-                                $<span class="price">4 </span>
+                                $<span class="price">399.99</span>
 
                             </label>
                         </li>
@@ -279,37 +283,37 @@ session_start();
                     <ul>
                         <li>
                             <label>
-                                <input type="radio" name="Storage" value="HDD-1tb|1" required>
+                                <input type="radio" name="Storage" value="HDD-1tb|59.99" required>
                                 <img src="images/HDD-1tb.jpg">
                                 <span class="detail">HDD 1TB</span>&emsp;
-                                $<span class="price">1 </span>
+                                $<span class="price">59.99</span>
 
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="Storage" value="HDD-2tb|2" required>
+                                <input type="radio" name="Storage" value="HDD-2tb|89.99" required>
                                 <img src="images/HDD-2tb.jpg">
                                 <span class="detail">HDD 2TB</span>&emsp;
-                                $<span class="price">2 </span>
+                                $<span class="price">89.99 </span>
 
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="Storage" value="SSD-1tb|3" required>
+                                <input type="radio" name="Storage" value="SSD-1tb|79.99" required>
                                 <img src="images/SSD-1tb.jpg">
                                 <span class="detail">SSD 1TB</span>&emsp;
-                                $<span class="price">3 </span>
+                                $<span class="price">79.99</span>
 
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="Storage" value="SSD-2tb|4" required>
+                                <input type="radio" name="Storage" value="SSD-2tb|109.99" required>
                                 <img src="images/SSD-2tb.jpg">
                                 <span class="detail">SSD 2TB</span>&emsp;
-                                $<span class="price">4 </span>
+                                $<span class="price">109.99</span>
 
                             </label>
                         </li>
@@ -348,34 +352,34 @@ session_start();
                     <ul>
                         <li>
                             <label>
-                                <input type="radio" name="RAM" value="4|1" class="RAM" checked required>
+                                <input type="radio" name="RAM" value="4|29.99" class="RAM" checked required>
                                 <img src="images/RAM-4.jpg">
                                 <span class="detail">4GB</span>&emsp;
-                                $<span class="price">1 </span>
+                                $<span class="price">29.99</span>
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="RAM" value="8|2" class="RAM" required>
+                                <input type="radio" name="RAM" value="8|49.99" class="RAM" required>
                                 <img src="images/RAM-8.jpg">
                                 <span class="detail">8GB</span>&emsp;
-                                $<span class="price">2 </span>
+                                $<span class="price">49.99</span>
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="RAM" value="16|3" class="RAM" required>
+                                <input type="radio" name="RAM" value="16|69.99" class="RAM" required>
                                 <img src="images/RAM-16.jpg">
                                 <span class="detail">16GB</span>&emsp;
-                                $<span class="price">3 </span>
+                                $<span class="price">69.99</span>
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="RAM" value="32|4" class="RAM" required>
+                                <input type="radio" name="RAM" value="32|79.99" class="RAM" required>
                                 <img src="images/RAM-32.jpg">
                                 <span class="detail">32GB</span>&emsp;
-                                $<span class="price">4 </span>
+                                $<span class="price">79.99</span>
                             </label>
                         </li>
                     </ul><!--RAM TYPE-->
@@ -395,25 +399,28 @@ session_start();
 
 
 
-    </main>
-    <footer>
-        <div class="footer">
-            <div class="foot-logo">
-                <img src="images/foot-svg.svg" alt="">
-            </div>
-            <div class="info">
-                <div class="social-media">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg"></a>
-                    <a href="https://twitter.com/" target="_blank"><img src="images/twiter.svg"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg"></a>
-                    <a href="https://www.linkedin.com/" target="_blank"><img src="images/Linked_in.svg"></a>
-                </div>
-                <p>2273 Marcus Street, Huntsville. AL</p>
-                <p>256-606-2447</p>
+
+
+
+
+    <div class="footer">
+        <div class="foot-logo">
+            <img src="images/foot-svg.svg" alt="">
         </div>
-        <div class="lic">©Binary Bros Inc. 2022 All Rights Reserved</div>
-          </div>
-    </footer>
+        <div class="info">
+            <div class="social-media">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="images/twiter.svg"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/Linked_in.svg"></a>
+            </div>
+            <p>2273 Marcus Street, Huntsville. AL</p>
+            <p>256-606-2447</p>
+        </div>
+        <div class="lic">
+            ©Binary Bros Inc. 2022 All Rights Reserved
+        </div>
+    </div>
+    </main>
 </body>
-<script src='Js/main.js'></script>
 </html>
