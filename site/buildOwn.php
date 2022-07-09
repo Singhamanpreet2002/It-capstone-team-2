@@ -27,13 +27,13 @@ session_start();
             </div>
             <ul class="nav-links">
                 <li><a href="./AboutUs.php">About Us</a></li>
+                <li><a href="Contact.php">Contact</a></li>
                 <li><a href="product.php">Products &#9660;</a>
                     <ul class="sub-nav-links">
                         <li><a href="preBuilt.php">Pre-Builds</a></li>
                     </ul>
                 </li>
                 <li><a href="Services.php">Services</a></li>
-                <li><a href="Contact.php">Contact</a></li>
                 <?php 
                     if (isset($_SESSION['username'])) {
                         echo '<li><a href="logout.php">Logout</a></li>';
@@ -53,9 +53,10 @@ session_start();
         </nav>
     </header>
     <main>
-        <div class="main">
     <!-- This is radeo-->
-        <h1 class="heading">
+
+
+        <h1>
             Build Your Own PC!
         </h1>
         <p>
@@ -116,7 +117,7 @@ session_start();
                     <ul>
                         <li>
                             <label>
-                                <input type="radio" name="Case" value="Black|74.99" required>
+                                <input type="radio" name="Case" value="Black|74.99" class="Case" required>
                                 <img src="images/Case3.png">
                                 <span class="detail">Black case</span>&emsp;
                                 $<span class="price">74.99</span>
@@ -125,7 +126,7 @@ session_start();
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="Case" value="White|79.99" required>
+                                <input type="radio" name="Case" value="White|79.99" class="Case" required>
                                 <img src="images/Case1.png">
                                 <span class="detail">White case</span>&emsp;
                                 $<span class="price">79.99</span>
@@ -134,7 +135,7 @@ session_start();
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="Case" value="Alternet|84.99" required>
+                                <input type="radio" name="Case" value="Alternet|84.99" class="Case" required>
                                 <img src="images/Case2.png">
                                 <span class="detail">Alternet case</span>&emsp;
                                 $<span class="price">84.99</span>
@@ -149,7 +150,7 @@ session_start();
                         <h4>Intel i5</h4>
                         <li>
                             <label>
-                                <input type="radio" name="CPU" value="i5-3450|49.99" required>
+                                <input type="radio" name="CPU" value="i5-3450|49.99" class="CPU" required>
                                 <img class="CPU" src="images/i5-3450.jpg">
                                 <span class="detail">i5-3450</span>&emsp;
                                 $<span class="price">49.99</span>
@@ -158,7 +159,7 @@ session_start();
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="CPU" value="i5-6400|59.99" required>
+                                <input type="radio" name="CPU" value="i5-6400|59.99" class="CPU" required>
                                 <img class="CPU" src="images/i5-6400.png">
                                 <span class="detail">i5-6400</span>&emsp;
                                 $<span class="price">59.99</span>
@@ -167,7 +168,7 @@ session_start();
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="CPU" value="i5-8500|74.99" required>
+                                <input type="radio" name="CPU" value="i5-8500|74.99" class="CPU" required>
                                 <img class="CPU" src="images/i5-8500.jpg">
                                 <span class="detail">i5-8500</span>&emsp;
                                 $<span class="price">74.99</span>
@@ -179,7 +180,7 @@ session_start();
                         <h4>Intel i7</h4>
                         <li>
                             <label>
-                                <input type="radio" name="CPU" value="i7-4790|54.99" required>
+                                <input type="radio" name="CPU" value="i7-4790|54.99" class="CPU" required>
                                 <img class="CPU" src="images/i7-4790.jpg">
                                 <span class="detail">i7-4790</span>&emsp;
                                 $<span class="price">54.99</span>
@@ -188,7 +189,7 @@ session_start();
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="CPU" value="i7-6700|69.99" required>
+                                <input type="radio" name="CPU" value="i7-6700|69.99" class="CPU" required>
                                 <img class="CPU" src="images/i7-6700.jpg">
                                 <span class="detail">i7-6700</span>&emsp;
                                 $<span class="price">69.99</span>
@@ -197,7 +198,7 @@ session_start();
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="CPU" value="i7-8700|79.99" required>
+                                <input type="radio" name="CPU" value="i7-8700|79.99" class="CPU" required>
                                 <img class="CPU" src="images/i7-8700.jpg">
                                 <span class="detail">i7-8700</span>&emsp;
                                 $<span class="price">79.99</span>
@@ -209,7 +210,7 @@ session_start();
                         <h4>Intel i9</h4>
                         <li>
                             <label>
-                                <input type="radio" name="CPU" value="i9-7940|74.99" required>
+                                <input type="radio" name="CPU" value="i9-7940|74.99" class="CPU" required>
                                 <img class="CPU" src="images/i9-7940.jpg">
                                 <span class="detail">i9-7940</span>&emsp;
                                 $<span class="price">74.99</span>
@@ -218,7 +219,7 @@ session_start();
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="CPU" value="i9-9820|89.99" required>
+                                <input type="radio" name="CPU" value="i9-9820|89.99" class="CPU" required>
                                 <img class="CPU" src="images/i9-9820.jpg">
                                 <span class="detail">i9-9820</span>&emsp;
                                 $<span class="price">89.99</span>
@@ -227,7 +228,7 @@ session_start();
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="CPU" value="i9-10850|99.99" required>
+                                <input type="radio" name="CPU" value="i9-10850|99.99" class="CPU" required>
                                 <img class="CPU" src="images/i9-10850.jpg">
                                 <span class="detail">i9-10850</span>&emsp;
                                 $<span class="price">99.99</span>
@@ -241,7 +242,7 @@ session_start();
                     <ul>
                         <li>
                             <label>
-                                <input type="radio" name="GPU" value="1660|79.99" required>
+                                <input type="radio" name="GPU" value="1660|79.99" class="GPU" required>
                                 <img src="images/RTX-1660.png">
                                 <span class="detail">RTX-1660</span>&emsp;
                                 $<span class="price">79.99</span>
@@ -250,7 +251,7 @@ session_start();
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="GPU" value="2080|109.99" required>
+                                <input type="radio" name="GPU" value="2080|109.99" class="GPU" required>
                                 <img src="images/RTX-2080.png">
                                 <span class="detail">RTX-2080</span>&emsp;
                                 $<span class="price">109.99</span>
@@ -259,7 +260,7 @@ session_start();
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="GPU" value="3080|199.99" required>
+                                <input type="radio" name="GPU" value="3080|199.99" class="GPU" required>
                                 <img src="images/RTX-3080.png">
                                 <span class="detail">RTX-3080</span>&emsp;
                                 $<span class="price">199.99</span>
@@ -268,7 +269,7 @@ session_start();
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="GPU" value="titan|399.99" required>
+                                <input type="radio" name="GPU" value="titan|399.99" class="GPU" required>
                                 <img src="images/RTX-titan.png">
                                 <span class="detail">Titan</span>&emsp;
                                 $<span class="price">399.99</span>
@@ -282,7 +283,7 @@ session_start();
                     <ul>
                         <li>
                             <label>
-                                <input type="radio" name="Storage" value="HDD-1tb|59.99" required>
+                                <input type="radio" name="Storage" value="HDD-1tb|59.99" class="Storage" required>
                                 <img src="images/HDD-1tb.jpg">
                                 <span class="detail">HDD 1TB</span>&emsp;
                                 $<span class="price">59.99</span>
@@ -291,7 +292,7 @@ session_start();
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="Storage" value="HDD-2tb|89.99" required>
+                                <input type="radio" name="Storage" value="HDD-2tb|89.99" class="Storage" required>
                                 <img src="images/HDD-2tb.jpg">
                                 <span class="detail">HDD 2TB</span>&emsp;
                                 $<span class="price">89.99 </span>
@@ -300,7 +301,7 @@ session_start();
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="Storage" value="SSD-1tb|79.99" required>
+                                <input type="radio" name="Storage" value="SSD-1tb|79.99" class="Storage" required>
                                 <img src="images/SSD-1tb.jpg">
                                 <span class="detail">SSD 1TB</span>&emsp;
                                 $<span class="price">79.99</span>
@@ -309,7 +310,7 @@ session_start();
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="Storage" value="SSD-2tb|109.99" required>
+                                <input type="radio" name="Storage" value="SSD-2tb|109.99" class="Storage" required>
                                 <img src="images/SSD-2tb.jpg">
                                 <span class="detail">SSD 2TB</span>&emsp;
                                 $<span class="price">109.99</span>
@@ -395,25 +396,31 @@ session_start();
         </br>
         </br>
         </br>
-        </div>                
-    </main>
-    <footer>
-        <div class="footer">
-            <div class="foot-logo">
-                <img src="images/foot-svg.svg" alt="">
-            </div>
-            <div class="info">
-                <div class="social-media">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg"></a>
-                    <a href="https://twitter.com/" target="_blank"><img src="images/twiter.svg"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg"></a>
-                    <a href="https://www.linkedin.com/" target="_blank"><img src="images/Linked_in.svg"></a>
-                </div>
-                <p>2273 Marcus Street, Huntsville. AL</p>
-                <p>256-606-2447</p>
-            </div>
-            <div class="lic">©Binary Bros Inc. 2022 All Rights Reserved</div>
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="foot-logo">
+            <img src="images/foot-svg.svg" alt="">
         </div>
-    </footer>
+        <div class="info">
+            <div class="social-media">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="images/twiter.svg"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/Linked_in.svg"></a>
+            </div>
+            <p>2273 Marcus Street, Huntsville. AL</p>
+            <p>256-606-2447</p>
+        </div>
+        <div class="lic">
+            ©Binary Bros Inc. 2022 All Rights Reserved
+        </div>
+    </div>
+    </main>
 </body>
 </html>
