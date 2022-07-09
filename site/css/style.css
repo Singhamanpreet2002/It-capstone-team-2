@@ -89,6 +89,7 @@ nav {
     display: none;
     width: 180px;
     height: auto;
+    z-index: 99;
 
 }
 

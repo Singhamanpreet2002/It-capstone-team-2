@@ -26,13 +26,13 @@ session_start();
             </div>
             <ul class="nav-links">
                 <li><a href="AboutUs.php">About Us</a></li>
-                <li><a href="Services.php">Services</a></li>
                 <li><a href="product.php">Products &#9660</a>
                     <ul class="sub-nav-links">
                         <li><a href="preBuilt.php">Pre-Builds</a></li>
                         <li><a href="buildOwn.php">Build you Own</a></li>
                     </ul>
                 </li>
+                <li><a href="Services.php">Services</a></li>
                 
 <?php 
    if (isset($_SESSION['username'])) {

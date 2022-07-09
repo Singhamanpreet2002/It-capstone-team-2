@@ -26,8 +26,8 @@ session_start();
             </div>
             <ul class="nav-links">
                 <li><a href="AboutUs.php">About Us</a></li>
-                <li><a href="Contact.php">Contact</a></li>
                 <li><a href="Services.php">Services</a></li>
+                <li><a href="Contact.php">Contact</a></li>
                 <?php 
    if (isset($_SESSION['username'])) {
    echo '<li><a href="logout.php">Logout</a></li>';
