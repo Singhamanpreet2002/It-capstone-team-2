@@ -91,7 +91,7 @@ session_start();
                             echo '<label for="prod">'. $AmountN . ' x ' . $RAMd . 'GB</label>';
                             echo '<label for="price">$'. $RAMp * $AmountN .'</label>';
                         echo '</div>';
-                        echo '<div class="summary">';
+                         echo '<div class="summary">';
                             echo '<label for="prod">Tax (7.5%)</label>';
                             $Tax = round(($RAMp * $AmountN + $Storagep + $GPUp + $CPUp + $Casep) * 0.075 , 2);
                             echo '<label for="price">$'. $Tax .'</label>';
