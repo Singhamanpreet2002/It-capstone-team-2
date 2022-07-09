@@ -24,8 +24,13 @@ session_start();
             </div>
             <ul class="nav-links">
                 <li><a href="AboutUs.php">About Us</a></li>
-                <li><a href="Services.php">Services</a></li>
                 <li><a href="Contact.php">Contact</a></li>
+                <li><a href="product.php">Products &#9660;</a>
+                    <ul class="sub-nav-links">
+                        <li><a href="buildOwn.php">Build you Own</a></li>
+                    </ul>
+                </li>
+                <li><a href="Services.php">Services</a></li>
 <?php 
    if (isset($_SESSION['username'])) {
    echo '<li><a href="logout.php">Logout</a></li>';
@@ -50,13 +55,15 @@ session_start();
         <br>
         <br>
         <?php 
+        
             if($_POST['isBYO']==1){
+            
                 echo "This is a BYO <br>";
                 echo "You ordered: <br>";
                 echo 'CPU: ' . $_POST['CPUd'] . '<br>';
                 echo 'Case: ' . $_POST['Cased'] . '<br>';
                 echo 'GPU: ' . $_POST['GPUd'] . '<br>';
-                echo 'RAM: ' . $_POST['AmountN'] . ' Sticks of '. $_POST['RAMd'] . '<br>';
+                echo 'RAM: ' . $_POST['AmountN'] . ' Sticks of '. $_POST['RAMd'] . ' GB<br>';
                 echo 'Storage: ' . $_POST['Storaged'] . '<br>';
                 echo 'Totaling: $' . $_POST['TotalBYO'] . '<br>';
                 echo 'Charged to this card: ' . $_POST['CNum'] . '<br>';
@@ -68,7 +75,7 @@ session_start();
 
             }elseif ($_POST['isPre'] == 1){
             
-                echo "This is prebuild";
+                echo "This is prebuild <br>";
                 echo "You ordered: <br>";                
                 echo 'Begginer' . $_POST['Fulld'] . ' PC<br>';
                 echo 'Totaling: $' . $_POST['TotalPre'] . '<br>';
@@ -82,6 +89,12 @@ session_start();
         <br>
         <br>
         <br>
+
+
+
+
+
+
     </main>
     <footer>
         <div class="footer">
