@@ -9,7 +9,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/aboutUs.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@ session_start();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!--end::Bootstrap css-->
 
-    <link rel="stylesheet" href="css/about-us/styles.css?v=1.0">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -100,7 +100,7 @@ session_start();
                     </p>
                 </div>
                 <div class="col-lg-4">
-                    <img src="images/about-us/Keyboard.jpg" width="100%">
+                    <img src="images/Keyboard.jpg" width="100%">
                 </div>
             </div>
         </div>
@@ -108,7 +108,7 @@ session_start();
             <div class="container py-5">
                 <div class="row d-flex">
                     <div class="col-lg-4 order-1 order-lg-0">
-                        <img src="images/about-us/open.jpg" width="100%">
+                        <img src="images/open.jpg" width="100%">
                     </div>
                     <div class="col-lg-8 order-0 order-lg-1">
                         <h2> 
@@ -132,7 +132,7 @@ session_start();
                     </p>
                 </div>    
                 <div class="col-lg-4">
-                    <img src="images/about-us/idea2.jpg" width="100%">
+                    <img src="images/idea2.jpg" width="100%">
                  </div>
             </div>
         </div>    
@@ -141,8 +141,8 @@ session_start();
                 <b>Your Dream PC Awaits...</b>
             </div>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-               <a class="btn btn-outline-dark btn-lg px-4 gap-3" href="./preBuilt.html">Pre-Builds</a>
-               <a class="btn btn-outline-dark btn-lg px-4" href="./buildOwn.html">Build Your Own</a>
+               <a class="btn btn-outline-dark btn-lg px-4 gap-3" href="./preBuilt.php">Pre-Builds</a>
+               <a class="btn btn-outline-dark btn-lg px-4" href="./buildOwn.php">Build Your Own</a>
             </div>
         </div>   
         <!--end::Body content-->
@@ -170,6 +170,6 @@ session_start();
     
 </body>
 <script src='Js/main.js'></script>
-<script src="Js/about-us/scripts.js"></script>
+<script src="Js/about.js"></script>
 
 </html>

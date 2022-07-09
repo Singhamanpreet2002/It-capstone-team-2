@@ -53,10 +53,9 @@ session_start();
         </nav>
     </header>
     <main>
+        <div class="main">
     <!-- This is radeo-->
-
-
-        <h1>
+        <h1 class="heading">
             Build Your Own PC!
         </h1>
         <p>
@@ -396,31 +395,25 @@ session_start();
         </br>
         </br>
         </br>
-
-
-
-
-
-
-
-    <div class="footer">
-        <div class="foot-logo">
-            <img src="images/foot-svg.svg" alt="">
-        </div>
-        <div class="info">
-            <div class="social-media">
-                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg"></a>
-                <a href="https://twitter.com/" target="_blank"><img src="images/twiter.svg"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg"></a>
-                <a href="https://www.linkedin.com/" target="_blank"><img src="images/Linked_in.svg"></a>
-            </div>
-            <p>2273 Marcus Street, Huntsville. AL</p>
-            <p>256-606-2447</p>
-        </div>
-        <div class="lic">
-            ©Binary Bros Inc. 2022 All Rights Reserved
-        </div>
-    </div>
+        </div>                
     </main>
+    <footer>
+        <div class="footer">
+            <div class="foot-logo">
+                <img src="images/foot-svg.svg" alt="">
+            </div>
+            <div class="info">
+                <div class="social-media">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="images/twiter.svg"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg"></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="images/Linked_in.svg"></a>
+                </div>
+                <p>2273 Marcus Street, Huntsville. AL</p>
+                <p>256-606-2447</p>
+            </div>
+            <div class="lic">©Binary Bros Inc. 2022 All Rights Reserved</div>
+        </div>
+    </footer>
 </body>
 </html>

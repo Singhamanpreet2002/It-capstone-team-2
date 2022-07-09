@@ -2,9 +2,11 @@ ul li {
 	display: inline;
 }
 
-main {
+.main {
+	display: flex;
 	text-align: center;
 	line-height: 2;
+	flex-direction: column;
 }
 
 [type=radio] {
@@ -32,6 +34,8 @@ img {
 }
 
 .cart {
+	display: flex;
+	flex-direction: column;
 	float: right;
 	width: 20%;
 	position: fixed;
@@ -44,13 +48,16 @@ img {
 }
 
 .dollor {
+	position: relative;
 	float: right;
 }
 
 .cart.price {
+	position: relative;
 	float: right;
 }
 
 .type {
+	position: relative;
 	float: left;
 }

@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-image: 
         linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
-        url(../../images/about-us/about-us-hero-banner.jpg);
+        url(../images/about-us-hero-banner.jpg);
 }
 
 .hero-banner-logo svg path {
