@@ -402,8 +402,7 @@ session_start();
 
 
 
- </main>
-    <footer>
+
     <div class="footer">
         <div class="foot-logo">
             <img src="images/foot-svg.svg" alt="">
