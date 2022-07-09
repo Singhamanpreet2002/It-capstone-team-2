@@ -1,6 +1,6 @@
 <?php 
 session_start();
-
+error_reporting (E_ALL ^ E_NOTICE); 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,11 +54,12 @@ session_start();
         <br>
         <br>
         <br>
+        <div style="margin-left: 50px">
         <?php 
         
             if($_POST['isBYO']==1){
             
-                echo "This is a BYO <br>";
+               
                 echo "You ordered: <br>";
                 echo 'CPU: ' . $_POST['CPUd'] . '<br>';
                 echo 'Case: ' . $_POST['Cased'] . '<br>';
@@ -75,7 +76,7 @@ session_start();
 
             }elseif ($_POST['isPre'] == 1){
             
-                echo "This is prebuild <br>";
+    
                 echo "You ordered: <br>";                
                 echo 'Begginer' . $_POST['Fulld'] . ' PC<br>';
                 echo 'Totaling: $' . $_POST['TotalPre'] . '<br>';
@@ -85,7 +86,7 @@ session_start();
            
 
             }
-        ?>
+        ?></div>
         <br>
         <br>
         <br>
@@ -96,7 +97,7 @@ session_start();
 
 
     </main>
-    <footer>
+       <footer>
         <div class="footer">
             <div class="foot-logo">
                 <img src="images/foot-svg.svg" alt="">
