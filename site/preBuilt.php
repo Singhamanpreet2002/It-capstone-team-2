@@ -90,14 +90,14 @@ session_start();
                     <a href="shipping.php?prebuild=true&Full=%20%7c999" class="sbtn"><input class="input" type="button" value="Shop"></a>
                 </div>
                 <div class="container-vert">
-                    <img class="pc" src="./images/pre-built-pc3.svg" alt="" srcset="">
+                    <img class="pc" src="./images/pre-built-pc2.svg" alt="" srcset="">
                     <div class="pc-name">Beginner Pro PC</div>
                     <div class="pc-info">H550 Prebuilt Mid-Tower PC</div>
                     <div class="price">$1399</div>
                     <a href="shipping.php?prebuild=true&Full=%20Pro%7c1399" class="sbtn"><input class="input" type="button" value="Shop"></a>
                 </div>
                 <div class="container-vert">
-                    <img class="pc" src="./images/pre-built-pc2.svg" alt="" srcset="">
+                    <img class="pc" src="./images/pre-built-pc3.svg" alt="" srcset="">
                     <div class="pc-name">Beginner Streamer PC</div>
                     <div class="pc-info">H650 Prebuilt Mid-Tower PC</div>
                     <div class="price">$1599</div>
