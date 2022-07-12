@@ -110,7 +110,7 @@ session_start();
         <div class="information">
             <form method="post" action="shipping.php">
                 <div>
-                    <h2>Case</h2>
+                    <h2 class="byoTitles">Case</h2>
                     <ul>
                         <li>
                             <label>
@@ -142,7 +142,7 @@ session_start();
                     </ul>
                 </div> <!--Case -->
                 <div>
-                    <h2>CPU</h2>
+                    <h2 class="byoTitles">CPU</h2>
                     <ul id="i5">
                         <h4>Intel i5</h4>
                         <li>
@@ -235,7 +235,7 @@ session_start();
                     </ul>
                 </div> <!--CPU -->
                 <div>
-                    <h2>GPU</h2>
+                    <h2 class="byoTitles">GPU</h2>
                     <ul>
                         <li>
                             <label>
@@ -276,7 +276,7 @@ session_start();
                     </ul>
                 </div> <!--GPU -->
                 <div>
-                    <h2>Storage</h2>
+                    <h2 class="byoTitles">Storage</h2>
                     <ul>
                         <li>
                             <label>
@@ -317,7 +317,7 @@ session_start();
                     </ul>
                 </div> <!--Storage -->
                 <div>
-                    <h2>RAM</h2>
+                    <h2 class="byoTitles">RAM</h2>
                     <h4>How Many:</h4>
                     <ul>
                         <li>

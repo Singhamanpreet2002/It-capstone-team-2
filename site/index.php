@@ -54,7 +54,7 @@ session_start();
         <img src="images/PC.jpg" style = "width:100%;">
  
        <div class = "home">
-        <a href="preBuilt.php">Pre-Build PC</a>
+        <a href="preBuilt.php">Pre-Built PC</a>
        <a href="buildOwn.php">Build your Own PC</a>
 </div>
 </div>
