@@ -10,6 +10,7 @@ error_reporting (E_ALL ^ E_NOTICE);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pre-Built PCs</title>
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/conf.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,11 +51,8 @@ error_reporting (E_ALL ^ E_NOTICE);
         </nav>
     </header>
     <main>
-    
-        <br>
-        <br>
-        <br>
-        <div style="margin-left: 50px">
+        <div class="container">
+        <div class="confinfo" >
         <?php 
         
             if($_POST['isBYO']==1){
@@ -87,15 +85,7 @@ error_reporting (E_ALL ^ E_NOTICE);
 
             }
         ?></div>
-        <br>
-        <br>
-        <br>
-
-
-
-
-
-
+        </div>
     </main>
        <footer>
         <div class="footer">
