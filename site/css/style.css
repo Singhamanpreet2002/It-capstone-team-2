@@ -262,3 +262,6 @@ footer{
     color: white;
     /* position: absolute; */ 
 }
+.conf{
+    margin-top: -50px;
+}
